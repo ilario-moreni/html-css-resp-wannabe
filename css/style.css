@@ -128,15 +128,41 @@ img {
     SOLUZIONE RESPONSIVE
  ************************************************/
 
-
+/* under 1160px width device */
  @media screen and (max-width: 1160px){
     .container{
         width: 100%;
     }
  }
 
+/* tablet device */
+
  @media screen and (min-width:481px) and (max-width: 768px){
     .lessons .col img {
         max-height: 200px;
+    }
+ }
+
+ /* smartphone device */
+
+ @media screen and (max-width: 480px){
+    .row{
+        flex-direction: column;
+    }
+
+    .row > .col {
+        width: 100%;
+    }
+
+
+    /* changing background why-us */
+    .why-us{
+        background-color: #222222;
+        padding: 3rem 0;
+        margin-bottom: 0;
+    }
+
+    .steps{
+        margin: 3rem 0 0;
     }
  }
